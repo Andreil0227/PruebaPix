@@ -311,7 +311,7 @@ WHERE LOWER(SCHEMA_NAME) = LOWER('pixdb');"</_expression>
                 </PropertyValues>
                 <SelectedOptionId i:nil="true" />
                 <AutoCloseMode>None</AutoCloseMode>
-                <EnableStatus>false</EnableStatus>
+                <EnableStatus>true</EnableStatus>
                 <ExceptionHandlingMode>Default</ExceptionHandlingMode>
                 <RetryCount>-1</RetryCount>
                 <Text>Leer archivo - Str_Json</Text>
@@ -341,7 +341,7 @@ WHERE LOWER(SCHEMA_NAME) = LOWER('pixdb');"</_expression>
                 </PropertyValues>
                 <SelectedOptionId i:nil="true" />
                 <AutoCloseMode>None</AutoCloseMode>
-                <EnableStatus>false</EnableStatus>
+                <EnableStatus>true</EnableStatus>
                 <ExceptionHandlingMode>Default</ExceptionHandlingMode>
                 <RetryCount>-1</RetryCount>
                 <Text>Asignar un valor - Dic_Json</Text>
@@ -489,7 +489,7 @@ WHERE LOWER(SCHEMA_NAME) = LOWER('pixdb');"</_expression>
                         </PropertyValues>
                         <SelectedOptionId i:nil="true" />
                         <AutoCloseMode>None</AutoCloseMode>
-                        <EnableStatus>false</EnableStatus>
+                        <EnableStatus>true</EnableStatus>
                         <ExceptionHandlingMode>Default</ExceptionHandlingMode>
                         <RetryCount>-1</RetryCount>
                         <Text>Ciclo For Each - item</Text>
@@ -1582,94 +1582,6 @@ ORDER BY
                 <_activityFullName>BR.Core.Base.ThrowException</_activityFullName>
               </AbstractStep>
               <AbstractStep z:Id="i153" i:type="ExecutedStep">
-                <Childs>
-                  <AbstractStep z:Id="i154" i:type="ExecutedStep">
-                    <Childs>
-                      <AbstractStep z:Id="i155" i:type="ExecutedStep">
-                        <Childs />
-                        <Id>641edb88-0547-49e0-be88-1c9fc52a58cd</Id>
-                        <Parent z:Ref="i154" />
-                        <PropertyValues>
-                          <PropertyValue z:Id="i156">
-                            <PropertyName>AffectedRecords</PropertyName>
-                            <_dataType>Expression</_dataType>
-                            <_expression></_expression>
-                            <_screenShotBase64 i:nil="true" />
-                            <_value i:nil="true" />
-                            <_xpathSettings xmlns:d15p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
-                          </PropertyValue>
-                          <PropertyValue z:Id="i157">
-                            <PropertyName>InSqlConnection</PropertyName>
-                            <_dataType>Expression</_dataType>
-                            <_expression>SQL_Con</_expression>
-                            <_screenShotBase64 i:nil="true" />
-                            <_value i:nil="true" />
-                            <_xpathSettings xmlns:d15p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
-                          </PropertyValue>
-                          <PropertyValue z:Id="i158">
-                            <PropertyName>SqlQuery</PropertyName>
-                            <_dataType>Expression</_dataType>
-                            <_expression>"CREATE DATABASE pixdb"</_expression>
-                            <_screenShotBase64 i:nil="true" />
-                            <_value i:nil="true" />
-                            <_xpathSettings xmlns:d15p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
-                          </PropertyValue>
-                        </PropertyValues>
-                        <SelectedOptionId>1</SelectedOptionId>
-                        <AutoCloseMode>None</AutoCloseMode>
-                        <EnableStatus>false</EnableStatus>
-                        <ExceptionHandlingMode>Default</ExceptionHandlingMode>
-                        <RetryCount>-1</RetryCount>
-                        <Text></Text>
-                        <_activityFullName>Activities.DataBaseSQL.SqlExecuteNonQuery</_activityFullName>
-                      </AbstractStep>
-                    </Childs>
-                    <Id>5216165f-338c-4082-8bfc-3bdddbe3714c</Id>
-                    <Parent z:Ref="i153" />
-                    <PropertyValues />
-                    <SelectedOptionId i:nil="true" />
-                    <AutoCloseMode>None</AutoCloseMode>
-                    <EnableStatus>true</EnableStatus>
-                    <ExceptionHandlingMode>Default</ExceptionHandlingMode>
-                    <RetryCount>-1</RetryCount>
-                    <Text></Text>
-                    <_activityFullName>BR.Core.Base.IfTrue</_activityFullName>
-                  </AbstractStep>
-                  <AbstractStep z:Id="i159" i:type="ExecutedStep">
-                    <Childs />
-                    <Id>d0678835-8bfd-4ccd-9802-7cdffeb6000c</Id>
-                    <Parent z:Ref="i153" />
-                    <PropertyValues />
-                    <SelectedOptionId i:nil="true" />
-                    <AutoCloseMode>None</AutoCloseMode>
-                    <EnableStatus>true</EnableStatus>
-                    <ExceptionHandlingMode>Default</ExceptionHandlingMode>
-                    <RetryCount>-1</RetryCount>
-                    <Text></Text>
-                    <_activityFullName>BR.Core.Base.IfFalse</_activityFullName>
-                  </AbstractStep>
-                </Childs>
-                <Id>c20403b7-fc1b-4ce1-b6d1-f1a2103b025e</Id>
-                <Parent z:Ref="i149" />
-                <PropertyValues>
-                  <PropertyValue z:Id="i160">
-                    <PropertyName>Condition</PropertyName>
-                    <_dataType>Expression</_dataType>
-                    <_expression>mensaje.ToString().Contains("Unknown database")</_expression>
-                    <_screenShotBase64 i:nil="true" />
-                    <_value i:nil="true" />
-                    <_xpathSettings xmlns:d11p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
-                  </PropertyValue>
-                </PropertyValues>
-                <SelectedOptionId i:nil="true" />
-                <AutoCloseMode>None</AutoCloseMode>
-                <EnableStatus>true</EnableStatus>
-                <ExceptionHandlingMode>Default</ExceptionHandlingMode>
-                <RetryCount>-1</RetryCount>
-                <Text></Text>
-                <_activityFullName>BR.Core.Base.If</_activityFullName>
-              </AbstractStep>
-              <AbstractStep z:Id="i161" i:type="ExecutedStep">
                 <Childs />
                 <Id>1472b0d3-1a75-4261-ac0e-06bd8f10d1a5</Id>
                 <Parent z:Ref="i149" />
@@ -1686,7 +1598,7 @@ ORDER BY
             <Id>bffd2dd8-446b-43bf-b454-142c25cbd88a</Id>
             <Parent z:Ref="i5" />
             <PropertyValues>
-              <PropertyValue z:Id="i162">
+              <PropertyValue z:Id="i154">
                 <PropertyName>Message</PropertyName>
                 <_dataType>Expression</_dataType>
                 <_expression>mensaje</_expression>
@@ -1694,7 +1606,7 @@ ORDER BY
                 <_value i:nil="true" />
                 <_xpathSettings xmlns:d9p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
               </PropertyValue>
-              <PropertyValue z:Id="i163">
+              <PropertyValue z:Id="i155">
                 <PropertyName>Source</PropertyName>
                 <_dataType>Expression</_dataType>
                 <_expression>fuente</_expression>
@@ -1702,7 +1614,7 @@ ORDER BY
                 <_value i:nil="true" />
                 <_xpathSettings xmlns:d9p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
               </PropertyValue>
-              <PropertyValue z:Id="i164">
+              <PropertyValue z:Id="i156">
                 <PropertyName>Exception</PropertyName>
                 <_dataType>Expression</_dataType>
                 <_expression>errors</_expression>
@@ -1719,7 +1631,7 @@ ORDER BY
             <Text></Text>
             <_activityFullName>BR.Core.Base.Catch</_activityFullName>
           </AbstractStep>
-          <AbstractStep z:Id="i165" i:type="ExecutedStep">
+          <AbstractStep z:Id="i157" i:type="ExecutedStep">
             <Childs />
             <Id>c937b1fd-48b3-4f84-a41e-37abdedbef22</Id>
             <Parent z:Ref="i5" />
@@ -1744,12 +1656,12 @@ ORDER BY
         <Text>Try/Catch - Inicio de script</Text>
         <_activityFullName>BR.Core.Base.TryCatch</_activityFullName>
       </AbstractStep>
-      <AbstractStep z:Id="i166" i:type="ExecutedStep">
+      <AbstractStep z:Id="i158" i:type="ExecutedStep">
         <Childs />
         <Id>61b1795e-437b-47ec-8ab7-6c529d0d6e8f</Id>
         <Parent z:Ref="i2" />
         <PropertyValues>
-          <PropertyValue z:Id="i167">
+          <PropertyValue z:Id="i159">
             <PropertyName>Text</PropertyName>
             <_dataType>Expression</_dataType>
             <_expression>TransactionItem.GetType().Name</_expression>
@@ -1766,12 +1678,12 @@ ORDER BY
         <Text></Text>
         <_activityFullName>BR.Core.Base.WriteLog</_activityFullName>
       </AbstractStep>
-      <AbstractStep z:Id="i168" i:type="ExecutedStep">
+      <AbstractStep z:Id="i160" i:type="ExecutedStep">
         <Childs />
         <Id>492c9e9f-2cb6-4cf7-9f91-605746a7a8d7</Id>
         <Parent z:Ref="i2" />
         <PropertyValues>
-          <PropertyValue z:Id="i169">
+          <PropertyValue z:Id="i161">
             <PropertyName>Text</PropertyName>
             <_dataType>Expression</_dataType>
             <_expression>"Fin del tratamiento de datos para trabajar."</_expression>
@@ -1803,8 +1715,8 @@ ORDER BY
   <Name>ProcessTransactionItem.pix</Name>
   <Namespaces xmlns:d2p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
   <Params>
-    <Parameter z:Id="i170">
-      <DefaultValueExpression>@"Data\Reporte_2025-08-14.json"</DefaultValueExpression>
+    <Parameter z:Id="i162">
+      <DefaultValueExpression></DefaultValueExpression>
       <Description></Description>
       <Name>String_Datosjson</Name>
       <RunnerType>None</RunnerType>
@@ -1819,7 +1731,7 @@ ORDER BY
   </PlatformVersion>
   <TemplateVersion xmlns:d2p1="http://schemas.datacontract.org/2004/07/System" i:nil="true" />
   <Variables xmlns:d2p1="http://schemas.datacontract.org/2004/07/BR.Logic.Params">
-    <d2p1:Variable z:Id="i171">
+    <d2p1:Variable z:Id="i163">
       <d2p1:DefaultValueExpression>@"Driver={MySQL ODBC 9.4 Unicode Driver};Server=127.0.0.1;UID=root;PWD=1234"</d2p1:DefaultValueExpression>
       <d2p1:Description></d2p1:Description>
       <d2p1:Name>Str_Conexion</d2p1:Name>
