@@ -40,3 +40,5 @@ System.Data
 System.Xml.Linq
 Newtonsoft.Json.Linq
 Newtonsoft.Json
+
+Formulario = https://form.jotform.com/252248613636055
